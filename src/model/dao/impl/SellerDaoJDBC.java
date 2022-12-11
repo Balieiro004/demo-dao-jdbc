@@ -53,7 +53,6 @@ public class SellerDaoJDBC implements SellerDao{
 			}else {
 				throw new DbException("Erro inesperado, nenhuma linha foi affetada");
 			}
-		
 		}catch(SQLException e) {
 			throw new DbException(e.getMessage());
 		}finally {
@@ -102,8 +101,7 @@ public class SellerDaoJDBC implements SellerDao{
 			throw new DbException(e.getMessage());
 		}finally {
 			DB.closeStatement(st);
-		}
-		
+		}	
 	}
 
 	@Override
